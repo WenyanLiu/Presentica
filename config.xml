@@ -21,36 +21,36 @@
 		<param name="ios-package" value="CDVStatusBar" onload="true" />
 		<param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
 		<param name="onload" value="true" />
-		<param name="id" value="cordova-plugin-statusbar" />
-	</feature>
+		
+	<param name="id" value="cordova-plugin-statusbar" /></feature>
 	<feature name="Console">
 		<param name="ios-package" value="CDVLogger" />
-		<param name="id" value="cordova-plugin-console" />
-	</feature>
+		
+	<param name="id" value="cordova-plugin-console" /></feature>
 	<feature name="Device">
 		<param name="android-package" value="org.apache.cordova.device.Device" />
 		<param name="ios-package" value="CDVDevice" />
-		<param name="id" value="cordova-plugin-device" />
-	</feature>
+		
+	<param name="id" value="cordova-plugin-device" /></feature>
 	<feature name="SplashScreen">
 		<param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
 		<param name="onload" value="true" />
 		<param name="ios-package" value="CDVSplashScreen" />
 	</feature>
 	<feature name="Splashscreen">
-		<param name="id" value="cordova-plugin-splashscreen" />
-	</feature>
+		
+	<param name="id" value="cordova-plugin-splashscreen" /></feature>
 	<feature name="Whitelist">
 		<param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
 		<param name="onload" value="true" />
-		<param name="id" value="cordova-plugin-whitelist" />
-	</feature>
+		
+	<param name="id" value="cordova-plugin-whitelist" /></feature>
 	<feature name="Keyboard">
 		<param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
 		<param name="onload" value="true" />
 		<param name="ios-package" value="IonicKeyboard" />
-		<param name="id" value="ionic-plugin-keyboard" />
-	</feature>
+		
+	<param name="id" value="ionic-plugin-keyboard" /></feature>
 	<platform name="ios">
 		<icon src="resources/ios/icon/icon.png" width="57" height="57" />
 		<icon src="resources/ios/icon/icon@2x.png" width="114" height="114" />
