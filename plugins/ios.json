@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.rockie.presentica"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.rockie.presentica"
         }
     },
     "dependent_plugins": {}

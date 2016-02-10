@@ -1,4 +1,4 @@
-angular.module('presentica', ['ionic', 'presentica.controllers', 'presentica.services'])
+angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'presentica.services'])
 
 //.run(function($ionicPlatform) {
 //  $ionicPlatform.ready(function() {
