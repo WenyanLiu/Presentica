@@ -22,6 +22,12 @@ angular.module('presentica', ['ionic', 'presentica.controllers', 'presentica.ser
 
   $stateProvider
 
+    .state('signin', {
+      url: '/sign-in',
+      templateUrl: 'templates/sign-in.html',
+      controller: 'SignInCtrl'
+    })
+
     // setup an abstract state for the tabs directive
     .state('tab', {
       url: '/tab',
@@ -57,8 +63,16 @@ angular.module('presentica', ['ionic', 'presentica.controllers', 'presentica.ser
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/class');
+  $urlRouterProvider.otherwise('/sign-in');
 
+})
+
+.controller('SignInCtrl', function($scope, $state) {
+  
+  $scope.signIn = function(user) {
+    $state.go('tab.class');
+  };
+  
 })
 
 .config(['$ionicConfigProvider', function($ionicConfigProvider) {
