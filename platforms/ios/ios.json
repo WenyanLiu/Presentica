@@ -15,6 +15,26 @@
                         {
                             "xml": "<feature name=\"SQLitePlugin\"><param name=\"ios-package\" value=\"SQLitePlugin\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"LocationManager\"><param name=\"ios-package\" value=\"CDVLocationManager\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "NSLocationAlwaysUsageDescription": [
+                        {
+                            "xml": "<string>This app would like to scan for iBeacons even when in the background.</string>",
+                            "count": 1
+                        }
+                    ],
+                    "NSLocationWhenInUseUsageDescription": [
+                        {
+                            "xml": "<string>This app would like to scan for iBeacons while it is in use.</string>",
+                            "count": 1
                         }
                     ]
                 }
@@ -26,6 +46,9 @@
             "PACKAGE_NAME": "com.rockie.presentica"
         },
         "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.rockie.presentica"
+        },
+        "com.unarin.cordova.beacon": {
             "PACKAGE_NAME": "com.rockie.presentica"
         }
     },
@@ -46,10 +69,61 @@
             "clobbers": [
                 "SQLitePlugin"
             ]
+        },
+        {
+            "file": "plugins/com.unarin.cordova.beacon/www/lib/underscore-min-1.6.js",
+            "id": "com.unarin.cordova.beacon.underscorejs",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
+        },
+        {
+            "file": "plugins/com.unarin.cordova.beacon/www/lib/q.min.js",
+            "id": "com.unarin.cordova.beacon.Q",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
+        },
+        {
+            "file": "plugins/com.unarin.cordova.beacon/www/LocationManager.js",
+            "id": "com.unarin.cordova.beacon.LocationManager",
+            "pluginId": "com.unarin.cordova.beacon",
+            "merges": [
+                "cordova.plugins"
+            ]
+        },
+        {
+            "file": "plugins/com.unarin.cordova.beacon/www/Delegate.js",
+            "id": "com.unarin.cordova.beacon.Delegate",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
+        },
+        {
+            "file": "plugins/com.unarin.cordova.beacon/www/model/Region.js",
+            "id": "com.unarin.cordova.beacon.Region",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
+        },
+        {
+            "file": "plugins/com.unarin.cordova.beacon/www/Regions.js",
+            "id": "com.unarin.cordova.beacon.Regions",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
+        },
+        {
+            "file": "plugins/com.unarin.cordova.beacon/www/model/CircularRegion.js",
+            "id": "com.unarin.cordova.beacon.CircularRegion",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
+        },
+        {
+            "file": "plugins/com.unarin.cordova.beacon/www/model/BeaconRegion.js",
+            "id": "com.unarin.cordova.beacon.BeaconRegion",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-splashscreen": "3.1.0",
-        "cordova-sqlite-storage": "0.8.0"
+        "cordova-sqlite-storage": "0.8.0",
+        "com.unarin.cordova.beacon": "3.3.0"
     }
 }

@@ -43,6 +43,11 @@
 		F682E70114C04265B0662FD9 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9514C31C9548E5AC2E0B66 /* CDVViewController+SplashScreen.m */; };
 		D64C64ED914D4D01BF848B00 /* SQLitePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E4541892AA42C2983E7FE5 /* SQLitePlugin.m */; };
 		ABF4C4EA0B2A438FB0ED499B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E0686717E5404E6983478DF9 /* libsqlite3.dylib */; };
+		E67D9CB0D6FE48AC8A7BDD69 /* CDVLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE4A3570191459DB82489A6 /* CDVLocationManager.m */; };
+		4E9CBD841C8C44C7880A1FC1 /* AppDelegate+CDVLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81075464BE9A47C8A7C60ADE /* AppDelegate+CDVLocationManager.m */; };
+		0C78B6B5733746ECB227E8E7 /* LMLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F803843A8E114CBEBE4FE8C1 /* LMLogger.m */; };
+		8B27F3F4DA514FF4BB1F65D4 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BC9961A3CC4AF6B17C5ECC /* CoreBluetooth.framework */; };
+		AB18DCFBC62D4528A619BB29 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E854C5B6EAC4C2FB60881E6 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +120,14 @@
 		96E4541892AA42C2983E7FE5 /* SQLitePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SQLitePlugin.m"; path = "cordova-sqlite-storage/SQLitePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		08FA9852DE5B4FB484220769 /* SQLitePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SQLitePlugin.h"; path = "cordova-sqlite-storage/SQLitePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		E0686717E5404E6983478DF9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsqlite3.dylib"; path = "usr/lib/libsqlite3.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
+		EDE4A3570191459DB82489A6 /* CDVLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocationManager.m"; path = "com.unarin.cordova.beacon/CDVLocationManager.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		81075464BE9A47C8A7C60ADE /* AppDelegate+CDVLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+CDVLocationManager.m"; path = "com.unarin.cordova.beacon/AppDelegate+CDVLocationManager.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		F803843A8E114CBEBE4FE8C1 /* LMLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "LMLogger.m"; path = "com.unarin.cordova.beacon/LMLogger.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		33986368EACC4AA195FBD427 /* CDVLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocationManager.h"; path = "com.unarin.cordova.beacon/CDVLocationManager.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		B381C1F9E0B1440498E80D80 /* AppDelegate+CDVLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+CDVLocationManager.h"; path = "com.unarin.cordova.beacon/AppDelegate+CDVLocationManager.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		CC28CBF5ED284796A5DA53B0 /* LMLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LMLogger.h"; path = "com.unarin.cordova.beacon/LMLogger.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		09BC9961A3CC4AF6B17C5ECC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		2E854C5B6EAC4C2FB60881E6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +140,8 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				ABF4C4EA0B2A438FB0ED499B /* libsqlite3.dylib in Frameworks */,
+				8B27F3F4DA514FF4BB1F65D4 /* CoreBluetooth.framework in Frameworks */,
+				AB18DCFBC62D4528A619BB29 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +215,8 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
 				E0686717E5404E6983478DF9 /* libsqlite3.dylib */,
+				09BC9961A3CC4AF6B17C5ECC /* CoreBluetooth.framework */,
+				2E854C5B6EAC4C2FB60881E6 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,6 +238,12 @@
 				81F1AEF9455D4943A05034BF /* CDVViewController+SplashScreen.h */,
 				96E4541892AA42C2983E7FE5 /* SQLitePlugin.m */,
 				08FA9852DE5B4FB484220769 /* SQLitePlugin.h */,
+				EDE4A3570191459DB82489A6 /* CDVLocationManager.m */,
+				81075464BE9A47C8A7C60ADE /* AppDelegate+CDVLocationManager.m */,
+				F803843A8E114CBEBE4FE8C1 /* LMLogger.m */,
+				33986368EACC4AA195FBD427 /* CDVLocationManager.h */,
+				B381C1F9E0B1440498E80D80 /* AppDelegate+CDVLocationManager.h */,
+				CC28CBF5ED284796A5DA53B0 /* LMLogger.h */,
 			);
 			name = Plugins;
 			path = "Presentica/Plugins";
@@ -408,6 +431,9 @@
 				152E216395B845E8815E66AD /* CDVSplashScreen.m in Sources */,
 				F682E70114C04265B0662FD9 /* CDVViewController+SplashScreen.m in Sources */,
 				D64C64ED914D4D01BF848B00 /* SQLitePlugin.m in Sources */,
+				E67D9CB0D6FE48AC8A7BDD69 /* CDVLocationManager.m in Sources */,
+				4E9CBD841C8C44C7880A1FC1 /* AppDelegate+CDVLocationManager.m in Sources */,
+				0C78B6B5733746ECB227E8E7 /* LMLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

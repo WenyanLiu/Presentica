@@ -5,11 +5,11 @@
     <div class="list">
       <label class="item item-input">
         <span class="input-label">用户名：</span>
-        <input type="text" ng-model="user.username">
+        <input type="text" ng-model="user.acct">
       </label>
       <label class="item item-input">
         <span class="input-label">密  码：</span>
-        <input type="password" ng-model="user.password">
+        <input type="password" ng-model="user.pwd">
       </label>
     </div>
 
@@ -17,9 +17,6 @@
       <button class="button button-block button-assertive" ng-click="signIn(user)">
         登录
       </button>
-      <p class="text-center">
-        Presentica用户名和密码与教学管理信息系统同步，请用教学管理信息系统的用户名和密码登录。
-      </p>
     </div>
 
   </ion-content>

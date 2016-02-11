@@ -12,6 +12,9 @@
         },
         "cordova-sqlite-storage": {
             "PACKAGE_NAME": "com.rockie.presentica"
+        },
+        "com.unarin.cordova.beacon": {
+            "PACKAGE_NAME": "com.rockie.presentica"
         }
     },
     "dependent_plugins": {}

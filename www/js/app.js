@@ -19,7 +19,7 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
 // })
 
 .config(function($stateProvider, $urlRouterProvider) {
-  
+
   $stateProvider
 
     .state('signin', {
@@ -35,11 +35,21 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
       templateUrl: 'templates/tabs.html'
     })
 
-    .state('tab.class', {
-      url: '/class',
+    .state('tab.lesson', {
+      url: '/lesson',
       views: {
-        'tab-class': {
-          templateUrl: 'templates/tab-class.html',
+        'tab-lesson': {
+            templateUrl: 'templates/tab-lesson.html',
+            controller: 'RollCallCtrl'
+        }
+      }
+    })
+
+    .state('tab.roll-call', {
+      url: '/lesson/roll-call',
+      views: {
+        'tab-lesson': {
+            templateUrl: 'templates/lesson-roll-call.html'
         }
       }
     })
@@ -48,7 +58,7 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
       url: '/info',
       views: {
         'tab-info': {
-          templateUrl: 'templates/tab-info.html',
+          templateUrl: 'templates/tab-info.html'
         }
       }
     })
@@ -71,4 +81,22 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
 
   $ionicConfigProvider.tabs.position('bottom');
 
-}]);
+}])
+
+.directive('hideTabs', function ($rootScope) {
+
+  return {
+    restrict: 'A',
+    link: function(scope, element, attributes) {
+      scope.$on('$ionicView.beforeEnter', function () {
+        scope.$watch(attributes.hideTabs, function (value) {
+          $rootScope.hideTabs = value;
+        });
+      });
+
+      scope.$on('$ionicView.beforeLeave', function () {
+        $rootScope.hideTabs = false;
+      });
+    }
+  };
+})

@@ -1,12 +1,12 @@
 angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'presentica.services'])
 
-//.run(function($ionicPlatform) {
+// .run(function($ionicPlatform) {
 //  $ionicPlatform.ready(function() {
 //    if(window.cordova && window.cordova.plugins.Keyboard) {
 //      // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
 //      // for form inputs)
 //      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-//
+
 //      // Don't remove this line unless you know what you are doing. It stops the viewport
 //      // from snapping when text inputs are focused. Ionic handles this internally for
 //      // a much nicer keyboard experience.
@@ -16,7 +16,7 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
 //      StatusBar.styleDefault();
 //    }
 //  });
-//})
+// })
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -35,11 +35,21 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
       templateUrl: 'templates/tabs.html'
     })
 
-    .state('tab.class', {
-      url: '/class',
+    .state('tab.lesson', {
+      url: '/lesson',
       views: {
-        'tab-class': {
-          templateUrl: 'templates/tab-class.html',
+        'tab-lesson': {
+            templateUrl: 'templates/tab-lesson.html',
+            controller: 'RollCallCtrl'
+        }
+      }
+    })
+
+    .state('tab.roll-call', {
+      url: '/lesson/roll-call',
+      views: {
+        'tab-lesson': {
+            templateUrl: 'templates/lesson-roll-call.html'
         }
       }
     })
@@ -48,7 +58,7 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
       url: '/info',
       views: {
         'tab-info': {
-          templateUrl: 'templates/tab-info.html',
+          templateUrl: 'templates/tab-info.html'
         }
       }
     })
@@ -67,16 +77,26 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
 
 })
 
-.controller('SignInCtrl', function($scope, $state) {
-  
-  $scope.signIn = function(user) {
-    $state.go('tab.class');
-  };
-  
-})
-
 .config(['$ionicConfigProvider', function($ionicConfigProvider) {
 
   $ionicConfigProvider.tabs.position('bottom');
 
-}]);
+}])
+
+.directive('hideTabs', function ($rootScope) {
+
+  return {
+    restrict: 'A',
+    link: function(scope, element, attributes) {
+      scope.$on('$ionicView.beforeEnter', function () {
+        scope.$watch(attributes.hideTabs, function (value) {
+          $rootScope.hideTabs = value;
+        });
+      });
+
+      scope.$on('$ionicView.beforeLeave', function () {
+        $rootScope.hideTabs = false;
+      });
+    }
+  };
+})

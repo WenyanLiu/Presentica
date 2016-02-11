@@ -15,7 +15,7 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-    <script src="../bower_componets/ngCordova/dist/ng-cordova.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
     <script src="cordova.js"></script>
 
     <!-- my app's js -->
@@ -24,9 +24,9 @@
     <script src="js/services.js"></script>
   </head>
   
-  <body ng-app="presentica" animation="slide-left-right">
+  <body ng-app="presentica" animation="slide-left-right" class="platform-ios platform-cordova platform-webview">
       
-    <ion-nav-bar class="bar-assertive">
+    <ion-nav-bar class="bar-dark">
       <ion-nav-back-button class="button-icon button-clear ion-ios7-arrow-back">
       </ion-nav-back-button>
     </ion-nav-bar>
