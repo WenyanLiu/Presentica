@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.rockie.presentica" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.rockie.presentica" version="1.0.0 Alpha" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Presentica</name>
   <description>A mobile attendance management system of university class.</description>
   <author email="f.v.rockie@hotmail.com" href="https://github.com/F-V-Rockie/">F.V.Rockie</author>

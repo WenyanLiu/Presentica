@@ -1,27 +1,10 @@
 angular.module('presentica.controllers', [])
 
-.controller('SignInCtrl', ['$scope', '$http', 'userCookie', function($scope, $http, user) {
+.controller('SignInCtrl', function($scope, $state) {
   
-  $scope.signIn = function() {
-
-  $http()
-
-  .success(function(user, status) {
-  	if (user.status) {
-  		//Success signIn
-  		user.isSignIn = true;
-  		user.acct = user.acct;
-  	}
-  	else {
-  		user.isSignIn = false;
-  		user.acct = '';
-  	}
-  })
-  .error(function(user, status) {
-  	user.isSignIn = false;
-  	user.acct = '';
-  })
- 
- };
+  $scope.signIn = function(user) {
+    // console.log('Sign-In', user);
+    $state.go('tab.class');
+  };
   
 })
