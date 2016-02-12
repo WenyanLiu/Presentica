@@ -31,44 +31,14 @@
                         {
                             "xml": "<feature name=\"SQLitePlugin\"><param name=\"android-package\" value=\"io.sqlc.SQLitePlugin\" /></feature>",
                             "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"LocationManager\"><param name=\"android-package\" value=\"com.unarin.cordova.beacon.LocationManager\" /></feature>",
-                            "count": 1
                         }
                     ]
                 }
             },
             "AndroidManifest.xml": {
                 "parents": {
-                    "/manifest": [
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />",
-                            "count": 1
-                        }
-                    ],
-                    "/manifest/application": [
-                        {
-                            "xml": "<receiver android:name=\"org.altbeacon.beacon.startup.StartupBroadcastReceiver\"><intent-filter><action android:name=\"android.intent.action.BOOT_COMPLETED\" /><action android:name=\"android.intent.action.ACTION_POWER_CONNECTED\" /><action android:name=\"android.intent.action.ACTION_POWER_DISCONNECTED\" /></intent-filter></receiver>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<service android:enabled=\"true\" android:exported=\"true\" android:isolatedProcess=\"false\" android:label=\"iBeacon\" android:name=\"org.altbeacon.beacon.service.BeaconService\"></service>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<service android:enabled=\"true\" android:name=\"org.altbeacon.beacon.BeaconIntentProcessor\"><meta-data android:name=\"background\" android:value=\"true\" /><intent-filter android:priority=\"1\"><action android:name=\"com.unarin.cordova.beacon.IBeaconPlugin.DID_RANGING\" /><action android:name=\"com.unarin.cordova.beacon.IBeaconPlugin.DID_MONITORING\" /></intent-filter></service>",
-                            "count": 1
-                        }
-                    ]
+                    "/manifest": [],
+                    "/manifest/application": []
                 }
             }
         }
@@ -93,9 +63,6 @@
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
         "cordova-sqlite-storage": {
-            "PACKAGE_NAME": "com.rockie.presentica"
-        },
-        "com.unarin.cordova.beacon": {
             "PACKAGE_NAME": "com.rockie.presentica"
         }
     },
@@ -141,48 +108,6 @@
             "clobbers": [
                 "SQLitePlugin"
             ]
-        },
-        {
-            "file": "plugins/com.unarin.cordova.beacon/www/lib/underscore-min-1.6.js",
-            "id": "com.unarin.cordova.beacon.underscorejs",
-            "runs": true
-        },
-        {
-            "file": "plugins/com.unarin.cordova.beacon/www/lib/q.min.js",
-            "id": "com.unarin.cordova.beacon.Q",
-            "runs": true
-        },
-        {
-            "file": "plugins/com.unarin.cordova.beacon/www/LocationManager.js",
-            "id": "com.unarin.cordova.beacon.LocationManager",
-            "merges": [
-                "cordova.plugins"
-            ]
-        },
-        {
-            "file": "plugins/com.unarin.cordova.beacon/www/Delegate.js",
-            "id": "com.unarin.cordova.beacon.Delegate",
-            "runs": true
-        },
-        {
-            "file": "plugins/com.unarin.cordova.beacon/www/model/Region.js",
-            "id": "com.unarin.cordova.beacon.Region",
-            "runs": true
-        },
-        {
-            "file": "plugins/com.unarin.cordova.beacon/www/Regions.js",
-            "id": "com.unarin.cordova.beacon.Regions",
-            "runs": true
-        },
-        {
-            "file": "plugins/com.unarin.cordova.beacon/www/model/CircularRegion.js",
-            "id": "com.unarin.cordova.beacon.CircularRegion",
-            "runs": true
-        },
-        {
-            "file": "plugins/com.unarin.cordova.beacon/www/model/BeaconRegion.js",
-            "id": "com.unarin.cordova.beacon.BeaconRegion",
-            "runs": true
         }
     ]
 }
