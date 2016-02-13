@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		152E216395B845E8815E66AD /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB0CF0EA754100BFD70D20 /* CDVSplashScreen.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
@@ -44,7 +43,6 @@
 		AB18DCFBC62D4528A619BB29 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E854C5B6EAC4C2FB60881E6 /* CoreLocation.framework */; };
 		ABF4C4EA0B2A438FB0ED499B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E0686717E5404E6983478DF9 /* libsqlite3.dylib */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		D64C64ED914D4D01BF848B00 /* SQLitePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E4541892AA42C2983E7FE5 /* SQLitePlugin.m */; };
 		F682E70114C04265B0662FD9 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9514C31C9548E5AC2E0B66 /* CDVViewController+SplashScreen.m */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +64,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08FA9852DE5B4FB484220769 /* SQLitePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQLitePlugin.h; path = "cordova-sqlite-storage/SQLitePlugin.h"; sourceTree = "<group>"; };
 		09BC9961A3CC4AF6B17C5ECC /* CoreBluetooth.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,7 +106,6 @@
 		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
 		81F1AEF9455D4943A05034BF /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Presentica-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Presentica-Info.plist"; path = "../Presentica-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		96E4541892AA42C2983E7FE5 /* SQLitePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQLitePlugin.m; path = "cordova-sqlite-storage/SQLitePlugin.m"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		E0686717E5404E6983478DF9 /* libsqlite3.dylib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		EB87FDF21871DA7A0020F90C /* merges */ = {isa = PBXFileReference; lastKnownFileType = folder; name = merges; path = ../../merges; sourceTree = "<group>"; };
@@ -226,8 +222,6 @@
 				6D9514C31C9548E5AC2E0B66 /* CDVViewController+SplashScreen.m */,
 				ED51CD8EF7FF4C99B268C502 /* CDVSplashScreen.h */,
 				81F1AEF9455D4943A05034BF /* CDVViewController+SplashScreen.h */,
-				96E4541892AA42C2983E7FE5 /* SQLitePlugin.m */,
-				08FA9852DE5B4FB484220769 /* SQLitePlugin.h */,
 			);
 			name = Plugins;
 			path = Presentica/Plugins;
@@ -309,7 +303,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 720;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = TAZ2EJT98M;
@@ -419,7 +413,6 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				152E216395B845E8815E66AD /* CDVSplashScreen.m in Sources */,
 				F682E70114C04265B0662FD9 /* CDVViewController+SplashScreen.m in Sources */,
-				D64C64ED914D4D01BF848B00 /* SQLitePlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

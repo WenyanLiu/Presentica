@@ -27,10 +27,6 @@
                         {
                             "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"SQLitePlugin\"><param name=\"android-package\" value=\"io.sqlc.SQLitePlugin\" /></feature>",
-                            "count": 1
                         }
                     ]
                 }
@@ -61,9 +57,6 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "cordova-sqlite-storage": {
-            "PACKAGE_NAME": "com.rockie.presentica"
         }
     },
     "dependent_plugins": {},
@@ -101,13 +94,6 @@
                 "cordova.plugins.Keyboard"
             ],
             "runs": true
-        },
-        {
-            "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
-            "id": "cordova-sqlite-storage.SQLitePlugin",
-            "clobbers": [
-                "SQLitePlugin"
-            ]
         }
     ]
 }

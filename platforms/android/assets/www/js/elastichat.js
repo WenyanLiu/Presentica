@@ -287,7 +287,7 @@ function getMockMessages() {
     {"_id":"54764399ab43d1d4113abfd1","text":"停课通知：按照校历安排，学校定于2016年2月8日（星期一）——2月12日（星期五）进入寒假。期间课程停上，补课后续安排。特此通知。","userId":"1000","date":"2016-02-07T00:00:00.000Z","read":true,"readDate":"2016-02-07T00:00:00.000Z"},
     {"_id":"547643aeab43d1d4113abfd2","text":"收到。","userId":"16000000000","date":"2016-02-07T00:00:00.000Z","read":true,"readDate":"2016-02-07T00:00:00.000Z"},
     {"_id":"547815dbab43d1d4113abfef","text":"福布斯先生讲座通知：[讲座内容]：互联网+；[讲座时间]：2016年2月29日18:00；[讲座地点]：明镜楼800人。","userId":"1000","date":"2016-02-24T18:00:00.000Z","read":true,"readDate":"2016-02-24T19:00:00.000Z"},
-    // {"_id":"54781c69ab43d1d4113abff0","text":"收到，谢谢华老师！","userId":"16000000000","date":"2016-02-25T05:30:00.000Z","read":true,"readDate":"2016-02-25T06:30:00.000Z"},
+    {"_id":"54781c69ab43d1d4113abff0","text":"收到，谢谢华老师！","userId":"16000000000","date":"2016-02-25T05:30:00.000Z","read":true,"readDate":"2016-02-25T06:30:00.000Z"},
     // {"_id":"54781ca4ab43d1d4113abff1","text":"Yea, it's pretty sweet","userId":"534b8e5aaa5e7afc1b23e69b","date":"2014-11-28T06:56:36.472Z","read":true,"readDate":"2014-12-01T06:27:38.338Z"},
     // {"_id":"5478df86ab43d1d4113abff4","text":"Wow, this is really something huh?","userId":"534b8fb2aa5e7afc1b23e69c","date":"2014-11-28T20:48:06.572Z","read":true,"readDate":"2014-12-01T06:27:38.339Z"},
     // {"_id":"54781ca4ab43d1d4113abff1","text":"Create amazing apps - ionicframework.com","userId":"534b8e5aaa5e7afc1b23e69b","date":"2014-11-29T06:56:36.472Z","read":true,"readDate":"2014-12-01T06:27:38.338Z"}
