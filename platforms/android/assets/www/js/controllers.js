@@ -26,6 +26,9 @@ angular.module('presentica.controllers', [])
 .controller('RollCallCtrl', function($scope, $state) {
 
   $scope.rollCall = function() {
+
+      //
+
   }
   
 })

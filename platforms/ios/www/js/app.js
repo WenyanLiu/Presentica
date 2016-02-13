@@ -1,4 +1,4 @@
-angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'presentica.services'])
+angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'presentica.services', 'presentica.elastichat'])
 
 .run(function($ionicPlatform) {
  $ionicPlatform.ready(function() {
@@ -16,12 +16,6 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
      StatusBar.styleDefault();
    }
  });
-})
-
-.run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    WifiWizard.getCurrentSSID(ssidHandler, fail);
-  })
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -65,6 +59,16 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
       views: {
         'tab-info': {
           templateUrl: 'templates/tab-info.html'
+        }
+      }
+    })
+
+    .state('tab.detail', {
+      url: '/info/detail',
+      views: {
+        'tab-info': {
+          templateUrl: 'templates/info-detail.html',
+          controller: 'UserMessagesCtrl'
         }
       }
     })

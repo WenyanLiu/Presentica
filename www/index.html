@@ -16,19 +16,29 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
+    <script src='lib/ajax/jquery.min.js'></script>
+
     <script src="lib/ngCordova/dist/ng-cordova.js"></script>
     <script src="cordova.js"></script>
+
+    <!-- moment -->
+    <script src="lib/ajax/moment.min.js"></script>
+    <!-- angular moment -->
+    <script src="lib/ajax/angular-moment.min.js"></script>
 
     <!-- my app's js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
+
+    <script src="js/elastichat.js"></script>
+    
   </head>
   
   <body ng-app="presentica" animation="slide-left-right">
       
-    <ion-nav-bar class="bar-dark">
-      <ion-nav-back-button class="button-icon button-clear ion-ios7-arrow-back">
+    <ion-nav-bar class="bar-dark" no-tap-scroll="false" align-title="center">
+      <ion-nav-back-button class="button-icon button-clear ion-ios-arrow-back">
       </ion-nav-back-button>
     </ion-nav-bar>
     
