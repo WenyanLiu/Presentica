@@ -215,7 +215,7 @@ angular.module('presentica.elastichat', ['ionic', 'monospaced.elastic', 'angular
       return {
         userId: '1000',
         date: new Date(),
-        text: '欢迎您使用Presentica。如果您在使用过程中有任何的问题或建议，记得在https://github.com/F-V-Rockie/Presentica给我反馈哦。'
+        text: '欢迎您使用Presentica。如果您在使用过程中有任何的问题或建议，记得在github给我反馈哦。'
       };
     }
 

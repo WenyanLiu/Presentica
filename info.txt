@@ -1,3 +1,9 @@
+Node version: v5.5.0
+
+Cordova version: 6.0.0
+
+Config.xml file: 
+
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.rockie.presentica" version="1.0.0-ALPHA" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Presentica</name>
@@ -12,7 +18,7 @@
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="AutoHideSplashScreen" value="true" />
-  <preference name="SplashScreenDelay" value="5000"/>
+  <preference name="SplashScreenDelay" value="7000"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
     <param name="android-package" value="org.apache.cordova.statusbar.StatusBar"/>
@@ -97,3 +103,15 @@
   </platform>
   <icon src="resources/android/icon/drawable-xhdpi-icon.png"/>
 </widget>
+
+Plugins: 
+
+cordova-plugin-bluetoothle,cordova-plugin-console,cordova-plugin-device,cordova-plugin-splashscreen,cordova-plugin-statusbar,cordova-plugin-whitelist,ionic-plugin-keyboard
+
+Error retrieving Android platform information: Error: android: Command failed with exit code ENOENT
+
+iOS platform:
+
+Xcode 7.2.1
+Build version 7C1002
+
