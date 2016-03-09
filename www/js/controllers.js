@@ -2,10 +2,6 @@ angular.module('presentica.controllers', [])
 
 .controller('SignInCtrl', function($rootScope, $state) {
 
-  // $scope.idNumber = '00000000000';
-  // $scope.pic = '';
-  // $scope.address = '';
-
   $rootScope.signIn = function(user) {
   	if (user.acct == user.pwd && (user.acct == '1000' || user.acct == '9999'
      || user.acct == '16000000000' || user.acct == '16011111111' || user.acct == '16022222222' || user.acct == '16033333333' )) {
@@ -48,3 +44,14 @@ angular.module('presentica.controllers', [])
   }
   
 })
+
+.controller('LogOutCtrl', function($rootScope, $state) {
+
+  $rootScope.logOut = function() {
+    $rootScope.idNumber = '',
+    $rootScope.pic = '',
+    $rootScope.address = ''
+    $state.go('signin');
+    };
+  }
+)

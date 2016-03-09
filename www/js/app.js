@@ -77,7 +77,8 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
       url: '/me',
       views: {
         'tab-me': {
-          templateUrl: 'templates/tab-me.html'
+          templateUrl: 'templates/tab-me.html',
+          controller: 'LogOutCtrl'
         }
       }
     })
