@@ -46,5 +46,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-hotspot": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-hotspot"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

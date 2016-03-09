@@ -27,6 +27,9 @@
     "installed_plugins": {
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.rockie.presentica"
+        },
+        "cordova-plugin-hotspot": {
+            "PACKAGE_NAME": "com.rockie.presentica"
         }
     },
     "dependent_plugins": {},
@@ -38,9 +41,18 @@
             "clobbers": [
                 "navigator.splashscreen"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-hotspot/www/HotSpotPlugin.js",
+            "id": "cordova-plugin-hotspot.HotSpotPlugin",
+            "pluginId": "cordova-plugin-hotspot",
+            "clobbers": [
+                "cordova.plugins.hotspot"
+            ]
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-splashscreen": "3.1.0"
+        "cordova-plugin-splashscreen": "3.1.0",
+        "cordova-plugin-hotspot": "0.8.1"
     }
 }

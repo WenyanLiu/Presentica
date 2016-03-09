@@ -33,6 +33,13 @@ module.exports = [
             "cordova.plugins.Keyboard"
         ],
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-hotspot/www/HotSpotPlugin.js",
+        "id": "cordova-plugin-hotspot.HotSpotPlugin",
+        "clobbers": [
+            "cordova.plugins.hotspot"
+        ]
     }
 ];
 module.exports.metadata = 

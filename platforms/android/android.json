@@ -27,14 +27,57 @@
                         {
                             "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"HotSpotPlugin\"><param name=\"android-package\" value=\"de.martinreinhardt.cordova.plugins.hotspot.HotSpotPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
             },
             "AndroidManifest.xml": {
                 "parents": {
-                    "/manifest": [],
-                    "/manifest/application": []
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [],
+                    "application/activity": [
+                        {
+                            "xml": "<action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\" />",
+                            "count": 1
+                        }
+                    ]
                 }
             }
         }
@@ -57,6 +100,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "cordova-plugin-hotspot": {
+            "PACKAGE_NAME": "com.rockie.presentica"
         }
     },
     "dependent_plugins": {},
@@ -94,6 +140,13 @@
                 "cordova.plugins.Keyboard"
             ],
             "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-hotspot/www/HotSpotPlugin.js",
+            "id": "cordova-plugin-hotspot.HotSpotPlugin",
+            "clobbers": [
+                "cordova.plugins.hotspot"
+            ]
         }
     ]
 }

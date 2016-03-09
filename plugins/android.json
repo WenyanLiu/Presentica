@@ -24,6 +24,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "cordova-plugin-hotspot": {
+            "PACKAGE_NAME": "com.rockie.presentica"
         }
     },
     "dependent_plugins": {}
