@@ -137,7 +137,24 @@ angular.module('presentica.controllers', [])
 	}
 
 	// Client-side for Stu
+	if (!$rootScope.roleIsTch) {
 
+		// Check if plugin is available
+		cordova.plugins.hotspot.isAvailable(function(pluginIsAvailable) {
+
+			if (pluginIsAvailable) {
+
+				// Connect to a WiFi Hotspot
+				cordova.plugins.hotspot.connectToHotspot("华老师", "", successCB, errorCB);
+
+			} else {
+				alert("Unsupported platform for now!");
+			};
+		});
+
+	}
+
+};
 })
 
 .controller('LogOutCtrl', function($rootScope, $state) {
