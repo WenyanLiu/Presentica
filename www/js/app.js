@@ -15,6 +15,7 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
    if(window.StatusBar) {
      StatusBar.styleDefault();
    }
+
  });
 })
 
@@ -40,7 +41,6 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
       views: {
         'tab-lesson': {
             templateUrl: 'templates/tab-lesson.html',
-            controller: 'RollCallCtrl'
         }
       }
     })
@@ -50,6 +50,7 @@ angular.module('presentica', ['ionic', 'ngCordova', 'presentica.controllers', 'p
       views: {
         'tab-lesson': {
             templateUrl: 'templates/lesson-roll-call.html',
+            controller: 'RollCallCtrl'
         }
       }
     })

@@ -1,11 +1,41 @@
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
 <ion-view hide-tabs="true" title="点名">
 
-  <ion-content padding="true">
+	<ion-content padding="true">
 
-名单
+		<div ng-if="roleIsTch">
+			<table class="table">
+				<tr>
+					<th>学号</th>
+					<th>   </th>
+					<th>姓名</th>
+					<th>   </th>
+					<th>出勤情况</th>
+				</tr>
+				<tr ng-repeat="stu in checkedStu | orderBy : 'idNumber'" ng-bing="checkedStu">
+					<td>{{ stu.idNumber }}</td>
+					<td>   </td>
+					<td>{{ stu.address }}</td>
+					<td>   </td>
+					<td>{{ stu.checked }}</td>
+				</tr>
+			</table>
+		</div>
 
-到到到
-    
-  </ion-content>
-  
+		<button class="button button-block button-assertive" ng-if="!rollCalling" ng-click="rollCall()">
+			<i class="icon ion-ios-flag-outline"></i> 签到
+		</button>
+
+		<div class="loader-center" ng-if="rollCalling && roleIsTch">
+			<div class="loader">
+				<ion-spinner icon="lines" class="spinner-assertive"></ion-spinner> 签到中……
+			</div>
+			<button class="button button-block button-assertive" ng-click="doneRollCall()">
+				<i class="icon ion-ios-flag"></i> 结束签到
+			</button>
+		</div>
+
+	</ion-content>
+
 </ion-view>
