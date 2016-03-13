@@ -90,7 +90,6 @@ angular.module('presentica.controllers', [])
 												}
 												if (!flag) {
 													$rootScope.checkedStu.push(s16000000000);
-													alert("checked Stu1");
 												}
 											} else if ('70:E7:2C:58:25:A0' == successGetHotspotDevices[j].mac) {
 												flag = false;
