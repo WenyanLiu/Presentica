@@ -7,10 +7,25 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-splashscreen": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.rockie.presentica"
+        },
+        "cordova-plugin-device": {
             "PACKAGE_NAME": "com.rockie.presentica"
         },
         "cordova-plugin-hotspot": {
+            "PACKAGE_NAME": "com.rockie.presentica"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.rockie.presentica"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.rockie.presentica"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.rockie.presentica"
+        },
+        "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.rockie.presentica"
         }
     },

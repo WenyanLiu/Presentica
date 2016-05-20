@@ -13,6 +13,10 @@
                             "count": 1
                         },
                         {
+                            "xml": "<feature name=\"HotSpotPlugin\"><param name=\"android-package\" value=\"de.martinreinhardt.cordova.plugins.hotspot.HotSpotPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
@@ -26,10 +30,6 @@
                         },
                         {
                             "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"HotSpotPlugin\"><param name=\"android-package\" value=\"de.martinreinhardt.cordova.plugins.hotspot.HotSpotPlugin\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -71,7 +71,6 @@
                             "count": 1
                         }
                     ],
-                    "/manifest/application": [],
                     "application/activity": [
                         {
                             "xml": "<action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\" />",
@@ -84,24 +83,24 @@
     },
     "installed_plugins": {
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
+            "PACKAGE_NAME": "com.rockie.presentica"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
+            "PACKAGE_NAME": "com.rockie.presentica"
         },
         "cordova-plugin-hotspot": {
+            "PACKAGE_NAME": "com.rockie.presentica"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.rockie.presentica"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.rockie.presentica"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.rockie.presentica"
+        },
+        "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.rockie.presentica"
         }
     },
@@ -112,6 +111,13 @@
             "id": "cordova-plugin-device.device",
             "clobbers": [
                 "device"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-hotspot/www/HotSpotPlugin.js",
+            "id": "cordova-plugin-hotspot.HotSpotPlugin",
+            "clobbers": [
+                "cordova.plugins.hotspot"
             ]
         },
         {
@@ -140,13 +146,15 @@
                 "cordova.plugins.Keyboard"
             ],
             "runs": true
-        },
-        {
-            "file": "plugins/cordova-plugin-hotspot/www/HotSpotPlugin.js",
-            "id": "cordova-plugin-hotspot.HotSpotPlugin",
-            "clobbers": [
-                "cordova.plugins.hotspot"
-            ]
         }
-    ]
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-console": "1.0.2",
+        "cordova-plugin-device": "1.1.1",
+        "cordova-plugin-hotspot": "0.8.1",
+        "cordova-plugin-splashscreen": "3.1.0",
+        "cordova-plugin-statusbar": "2.1.0",
+        "cordova-plugin-whitelist": "1.2.1",
+        "ionic-plugin-keyboard": "1.0.8"
+    }
 }

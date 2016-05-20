@@ -1,4 +1,5 @@
-cordova.define("cordova-plugin-hotspot.HotSpotPlugin", function(require, exports, module) { /*
+cordova.define("cordova-plugin-hotspot.HotSpotPlugin", function(require, exports, module) {
+/*
  *
  * The MIT License (MIT)
  *
