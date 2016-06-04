@@ -153,7 +153,6 @@ angular.module('presentica.controllers', [])
 
 	}
 
-};
 })
 
 .controller('LogOutCtrl', function($rootScope, $state) {
